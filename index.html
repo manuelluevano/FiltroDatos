@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="dist/app.css" />
+  </head>
+  <body class="min-h-screen" style="background-color: rgb(244 244 245)">
+    <div class="max-w-3xl mx-auto p-10">
+      <h1 class="text-4xl text-gray-700 pt-32 text-center">Filtro de Datos</h1>
+
+      <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
+        <form id="formulario" class="space-y-3">
+          <div class="flex flex-col space-y-2">
+            <label
+              htmlForamplify
+              configure="producto"
+              class="font-regular font-medium"
+              >Producto:</label
+            >
+            <select id="producto" class="u-full-width">
+              <option value="0">Seleccione</option>
+              <!-- INGRESAMOS LOS PRODUCTOS DE LA API -->
+
+
+            </select>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <label htmlFor="categoria" class="font-regular font-medium"
+              >Categoria:</label
+            >
+            <select id="categoria" class="u-full-width">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <label htmlFor="precio" class="font-regular font-medium"
+              >Precio Minimo:</label
+            >
+            <select id="precioMin" class="u-full-width">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <label htmlFor="precio" class="font-regular font-medium"
+              >Precio Maximo:</label
+            >
+            <select id="precioMax" class="u-full-width">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+        </form>
+
+        <h1 class="mt-10">Resultado</h1>
+        <div id="resultado"></div>
+
+        <!-- SPINNER -->
+        <!-- class="sk-fading-circle"  -->
+        <div id="spinner">
+          <div class="sk-circle1 sk-circle"></div>
+          <div class="sk-circle2 sk-circle"></div>
+          <div class="sk-circle3 sk-circle"></div>
+          <div class="sk-circle4 sk-circle"></div>
+          <div class="sk-circle5 sk-circle"></div>
+          <div class="sk-circle6 sk-circle"></div>
+          <div class="sk-circle7 sk-circle"></div>
+          <div class="sk-circle8 sk-circle"></div>
+          <div class="sk-circle9 sk-circle"></div>
+          <div class="sk-circle10 sk-circle"></div>
+          <div class="sk-circle11 sk-circle"></div>
+          <div class="sk-circle12 sk-circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
